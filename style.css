@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+.head-contain{
+  background-color: lightblue;
+  opacity: 0.5;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-contain h1{
+  color:#ffff;
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 5px 5px black;
+}
+
+.primary-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.box h1{
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  color: #464646;
+  border-bottom: solid 1px #464646 ;
+}
+
+
+.primary-container .box{
+  position: absolute;
+  background-color: #FAF9F6;
+  opacity: 0.7;
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.primary-container h2, p{
+  font-family: 'Merriweather', serif;
+  color: #464646;
+  font-size: 30px;
+}
+
+.second-container{
+  background-color:lightblue;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.container .box{
+  background-color: #464646;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  opacity: 0.8;
+  box-shadow: 0 5px 5px #FAF9F6;
+}
+
+.container .box h1{
+  color: #FAF9F6;
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+.inner-container p{
+  color: #121212;
+}
+
+/* Media Queries */
+@media screen and (max-width: 580px) {
+  
+  .head-contain{
+    background-color: lightblue;
+    opacity: 0.5;
+    width: 100vw;
+    height: 150px;
+  
+  }
+
+  .head-contain h1{
+    font-size: 48px;
+  }
+
+  .primary-container h2, p{
+    font-family: 'Merriweather', serif;
+    color: #464646;
+    font-size: 25px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+@media screen  and (min-width:1024px){
+  .second-container{
+    background-color:lightblue;
+    height: 700px;
+    overflow: hidden;
+  }
+}
+
+
+
+
